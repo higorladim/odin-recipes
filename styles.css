@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    border: 1px solid yellow;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -42,8 +41,6 @@
 
 .recipe-head{
     display: flex;
-    
-
 }
 
 .recipe-title{
@@ -55,7 +52,8 @@
 }
 
 .recipe-title *{
-    margin: 1rem;  
+    margin: 1rem;
+    
 }
 
 .recipe-title img{
@@ -66,16 +64,61 @@
 
 .description{
     margin: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid rgba(199, 9, 9, 0.562);
+    align-items: center;
+}
+.description h2,p{
+    margin: 1rem 0 1rem 0
+    
 }
 
 .ingredients{
     margin: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid rgba(199, 9, 9, 0.562);
+}
+
+.ingredients h2,p{
+    margin: 1rem 0 1rem 0
+}
+
+.ingredients ul{
+    padding: 0;
+    list-style: square;
+    list-style-position: inside;
 }
 
 .steps{
     margin: 1rem;
+    padding: 1rem 0 1rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(199, 9, 9, 0.562);
+}
+
+.steps h2,p{
+    margin: 1rem 0 1rem 0
+}
+
+.steps ol{
+    padding: 0;
+    list-style-position: inside;
+}
+
+.steps li::marker{
+    font-weight: bold;
 }
 
 .tips{
     margin: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid rgba(199, 9, 9, 0.562);
+}
+
+.tips h2,p{
+    margin: 1rem 0 1rem 0;
+    
 }
